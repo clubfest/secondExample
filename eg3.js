@@ -10,6 +10,9 @@ if (Meteor.isClient) {
         evt.currentTarget.textContent = "O";
       }
       isMyTurn = !isMyTurn;
+    },
+    'click #clear-board': function(evt) {
+      alert('To be implemented');
     }
   });
 
