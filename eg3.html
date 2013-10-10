@@ -4,6 +4,8 @@
 
 <body>
   {{> hello}}
+
+  {{> chat}}
 </body>
 
 <template name="hello">
@@ -22,3 +24,11 @@
   <button>_</button>
   <br/>
 </template>
+
+<template name="chat">
+  <h2>Comment here</h2>
+  <textarea></textarea>
+  <br/>
+  <button>Submit</button>
+</template>
+
