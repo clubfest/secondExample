@@ -3,7 +3,7 @@ if (Meteor.isClient) {
   var isMyTurn = true;
 
   Template.hello.events({
-    'click button' : function (evt) {
+    'click .board-button' : function (evt) {
       if (isMyTurn){
         evt.currentTarget.textContent = "X";
       } else {
