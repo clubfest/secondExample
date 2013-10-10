@@ -13,6 +13,12 @@ if (Meteor.isClient) {
     }
   });
 
+  Template.chat.events({
+    'click button': function(evt){
+      $("#comment-display").text("hi");
+    }
+  })
+
 }
 
 if (Meteor.isServer) {
