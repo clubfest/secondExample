@@ -15,7 +15,8 @@ if (Meteor.isClient) {
 
   Template.chat.events({
     'click button': function(evt){
-      $("#comment-display").text("hi");
+      var comment = $("textarea");
+      $("#comment-display").text(comment.val());
     }
   })
 
