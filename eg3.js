@@ -12,7 +12,7 @@ if (Meteor.isClient) {
       isMyTurn = !isMyTurn;
     },
     'click #clear-board': function(evt) {
-      alert('To be implemented');
+      $('.board-button').text("_");
     }
   });
 
