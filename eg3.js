@@ -1,9 +1,18 @@
 if (Meteor.isClient) {
 
+  var isMyTurn = true;
+
   Template.hello.events({
-    'click input' : function () {
+    'click button' : function (evt) {
+      if (isMyTurn){
+        evt.currentTarget.textContent = "X";
+      } else {
+        evt.currentTarget.textContent = "O";
+      }
+      isMyTurn = !isMyTurn;
     }
   });
+
 }
 
 if (Meteor.isServer) {
